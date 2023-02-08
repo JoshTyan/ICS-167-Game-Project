@@ -165,6 +165,10 @@ MonoBehaviour:
   movementSpeed: 1
   movementTime: 1
   newPosition: {x: 0, y: 0, z: 0}
+  topLimit: 46
+  bottomLimit: -46
+  leftLimit: 40
+  rightLimit: -40
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -192,7 +196,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
