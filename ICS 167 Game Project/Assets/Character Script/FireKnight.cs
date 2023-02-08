@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FireKnight : MonoBehaviour
 {
+    //
+    public int x = 1;
     // Start is called before the first frame update
     void Start()
     {
