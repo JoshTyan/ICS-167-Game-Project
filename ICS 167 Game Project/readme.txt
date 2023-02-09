@@ -2,12 +2,13 @@ How to Play
 
 WASD to move a character unit - (Currently can only move one character).
 
-Arrowkeys to move the camera.
+Arrow keys to move the camera.
 
-Left mouse button click to nagivate menus and to shoot - (There is friendly fire and running into your own projectile will self harm your own unit.)
+Left mouse button click to navigate menus and to shoot - (There is friendly fire and running into your own projectile will self harm your own unit.)
 
 Esc button to pause the game.
 
+Main Menu-Multiplayer button does not have any functionality whatsoever so if you want to play the game please click single player if you want to quit then press quit. 
 
 Goal to Win Game
 
@@ -19,13 +20,16 @@ Game Data Requirements
 Two family of objects with 5 objects in each family.
 Character Family (Knight, Archer, Mage, Priest, Witch)
 Potion Family (Heal 1 Potion, Heal 2 Potion, Heal 3 Potion, Heal 4 Potion, Heal 5 Potion)
-Character Family uses inheritence.
+Character Family uses inheritance.
 
 Playtest 1 Build Info
 Contains 2 Scenes
 - Game Arena/Map Scene
-- Title Screen Menu Scene
+- Title Screen/Menu Scene
 
 Has a pause menu that can close the game.
+
+To play the game again pause go then navigate to the main menu, and then click on single player again.
+
 Windows build.
 
