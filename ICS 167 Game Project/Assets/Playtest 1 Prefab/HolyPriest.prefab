@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5632fb2fc3f204f8060fc6c55dd6d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 18
   health: 18
 --- !u!1001 &4281353942170313454
 PrefabInstance:
@@ -179,6 +180,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
@@ -270,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -359,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -442,6 +455,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}

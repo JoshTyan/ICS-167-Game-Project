@@ -250,9 +250,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7608273381938687691, guid: 64d4bb02ea574b241a4e8dc818006c52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7983637259801345087, guid: 64d4bb02ea574b241a4e8dc818006c52, type: 3}
       propertyPath: m_Name
       value: WindArcher (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983637259801345090, guid: 64d4bb02ea574b241a4e8dc818006c52, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7983637259801345091, guid: 64d4bb02ea574b241a4e8dc818006c52, type: 3}
       propertyPath: m_RootOrder
@@ -315,10 +323,6 @@ PrefabInstance:
     - target: {fileID: 3891287160462655377, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
       propertyPath: m_Name
       value: VoidWitch
-      objectReference: {fileID: 0}
-    - target: {fileID: 3891287160462655379, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3891287160462655383, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
       propertyPath: m_RootOrder
@@ -1051,6 +1055,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4281353943791743453, guid: 3e7ae0cacd79615428962b938e149df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339212911253953742, guid: 3e7ae0cacd79615428962b938e149df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339212911349383320, guid: 3e7ae0cacd79615428962b938e149df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339212911373268351, guid: 3e7ae0cacd79615428962b938e149df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339212912796816900, guid: 3e7ae0cacd79615428962b938e149df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e7ae0cacd79615428962b938e149df3, type: 3}
 --- !u!1 &852825933
@@ -1327,9 +1351,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3557059286236246153, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557059286780287310, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557059286935397262, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3891287160462655377, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
       propertyPath: m_Name
       value: VoidWitch (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891287160462655380, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3891287160462655383, guid: 7572e3c5976a18b47af1b89459122400, type: 3}
       propertyPath: m_RootOrder
@@ -1663,9 +1703,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2262694224046852358, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
+      propertyPath: health
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 2262694224046852360, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
       propertyPath: m_Name
       value: FireKnight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262694224046852361, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2262694224046852362, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
       propertyPath: m_RootOrder
@@ -1710,6 +1758,10 @@ PrefabInstance:
     - target: {fileID: 2262694224046852362, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2262694224593416123, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4a8bdc00e789214b8381a7fd99b3433, type: 3}
@@ -1936,6 +1988,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2332661118159833586, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332661118585880875, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332661119721689683, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2811039400140038038, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}
       propertyPath: m_Name
       value: WaterMage (1)
@@ -1983,6 +2047,10 @@ PrefabInstance:
     - target: {fileID: 2811039400140038120, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811039400140038123, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 521e5ce2e89e4744aa0eb46512b80e8f, type: 3}

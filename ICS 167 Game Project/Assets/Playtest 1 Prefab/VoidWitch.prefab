@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0.6271906, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3891287160462655377}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c38e6c15e9cd12e4aa79d449a8cddad7, type: 3}
   m_Name: 
@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f781ae7139774b84e9743852d6a573bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 16
   health: 16
 --- !u!1001 &3891287160107986340
 PrefabInstance:
@@ -183,6 +184,10 @@ PrefabInstance:
     - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_Color.r
       value: 0.627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_RootOrder
@@ -277,6 +282,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.627451
       objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -369,6 +378,10 @@ PrefabInstance:
     - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_Color.r
       value: 0.627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 530747033289323754, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 530747033289323755, guid: 55ebd1e8ad6d37548baee0ac9679e9bd, type: 3}
       propertyPath: m_RootOrder
