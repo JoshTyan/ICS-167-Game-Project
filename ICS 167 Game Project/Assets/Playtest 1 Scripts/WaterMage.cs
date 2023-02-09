@@ -6,10 +6,27 @@ using UnityEngine;
 public class WaterMage : BaseHealth
 {
     //gets the corresponding base hp for the character
+    public float maxHealth;
     public float health;
     public WaterMage() : base()
     {
-        health = getMageHP();
+        maxHealth = getMageHP();
+    }
+
+    //set health equal to max health at start
+    private void Start()
+    {
+        health = maxHealth;
+    }
+
+    //heal on health potion pickup
+    public void HealHealth(float healAmount)
+    {
+        health += healAmount;
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
     }
 
     public void TakeDamage(float damageAmount)
