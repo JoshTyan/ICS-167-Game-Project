@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Kevin Rogan
+
 public class CharacterScript : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -24,9 +26,17 @@ public class CharacterScript : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             weapon.Fire();
-            weapon2.Fire();
-            weapon3.Fire();
-            weapon4.Fire();
+            if(!(weapon2 == null)){
+                weapon2.Fire();
+            }
+            if(!(weapon3 == null)){
+                weapon3.Fire();
+            }
+            //weapon3.Fire();
+            if(!(weapon4 == null)){
+                weapon4.Fire();
+            }
+            //weapon4.Fire();
         }
         //tracks mouse location
         moveDirection = new Vector2(moveX, moveY).normalized;

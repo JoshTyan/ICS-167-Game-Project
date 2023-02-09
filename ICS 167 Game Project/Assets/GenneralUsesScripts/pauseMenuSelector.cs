@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Kevin Rogan
+
 public class pauseMenuSelector : MonoBehaviour
 {
     // Start is called before the first frame update

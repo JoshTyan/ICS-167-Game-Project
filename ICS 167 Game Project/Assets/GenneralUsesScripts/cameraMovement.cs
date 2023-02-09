@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Kevin Rogan
+
 public class cameraMovement : MonoBehaviour
 {
     public float movementSpeed;
