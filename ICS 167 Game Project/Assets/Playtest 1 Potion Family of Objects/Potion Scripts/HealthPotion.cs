@@ -13,7 +13,7 @@ public class HealthPotion : MonoBehaviour
         FireKnight knightComponent = collision.gameObject.GetComponent<FireKnight>(); //returns true or false
         if(knightComponent)
         {
-            knightComponent.HealHealth(1);
+            knightComponent.HealHealth(1); //calls the corresponding HealHealth() in the character's script
             Destroy(gameObject);
         }
 
