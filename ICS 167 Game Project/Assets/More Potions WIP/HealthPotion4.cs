@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotion : MonoBehaviour
+public class HealthPotion4 : MonoBehaviour
 {
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //private float heal = 1f;
-    //Health Potion that heals 1
+    //TEMP, HealthPotion that heals 4
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //checks if knight trigger potion
         FireKnight knightComponent = collision.gameObject.GetComponent<FireKnight>(); //returns true or false
         if(knightComponent)
         {
-            knightComponent.HealHealth(1);
+            knightComponent.HealHealth(4);
             Destroy(gameObject);
         }
 
@@ -22,7 +20,7 @@ public class HealthPotion : MonoBehaviour
         WindArcher archerComponent = collision.gameObject.GetComponent<WindArcher>(); //returns true or false
         if(archerComponent)
         {
-            archerComponent.HealHealth(1);
+            archerComponent.HealHealth(4);
             Destroy(gameObject);
         }
 
@@ -30,7 +28,7 @@ public class HealthPotion : MonoBehaviour
         WaterMage mageComponent = collision.gameObject.GetComponent<WaterMage>(); //returns true or false
         if(mageComponent)
         {
-            mageComponent.HealHealth(1);
+            mageComponent.HealHealth(4);
             Destroy(gameObject);
         }
 
@@ -38,7 +36,7 @@ public class HealthPotion : MonoBehaviour
         HolyPriest priestComponent = collision.gameObject.GetComponent<HolyPriest>(); //returns true or false
         if(priestComponent)
         {
-            priestComponent.HealHealth(1);
+            priestComponent.HealHealth(4);
             Destroy(gameObject);
         }
 
@@ -46,7 +44,7 @@ public class HealthPotion : MonoBehaviour
         VoidWitch witchComponent = collision.gameObject.GetComponent<VoidWitch>(); //returns true or false
         if(witchComponent)
         {
-            witchComponent.HealHealth(1);
+            witchComponent.HealHealth(4);
             Destroy(gameObject);
         }
         
