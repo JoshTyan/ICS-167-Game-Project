@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Joshua Tyan
+
 public class HealthPotion4 : MonoBehaviour
 {
     //TEMP, HealthPotion that heals 4

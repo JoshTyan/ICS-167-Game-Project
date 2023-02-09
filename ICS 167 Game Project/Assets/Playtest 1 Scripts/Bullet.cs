@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Joshua Tyan
+
 public class Bullet : MonoBehaviour
 {
     private void Awake() // starts bullet projectile duration

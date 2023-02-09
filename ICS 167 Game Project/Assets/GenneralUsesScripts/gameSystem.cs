@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//Kevin Rogan
+
 public class gameSystem : MonoBehaviour
 {
     

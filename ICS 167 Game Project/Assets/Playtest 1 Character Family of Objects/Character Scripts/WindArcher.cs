@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Kevin Rogan, Joshua Tyan
 
 public class WindArcher : BaseHealth
 {

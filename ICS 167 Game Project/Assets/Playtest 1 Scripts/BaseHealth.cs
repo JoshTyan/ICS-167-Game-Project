@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+//Joshua Tyan, Kevin Rogan
+
 //holds all the character's base health
 //
 public class BaseHealth : MonoBehaviour

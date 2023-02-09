@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Joshua Tyan
+
 public class Weapon : MonoBehaviour
 {
     public GameObject bulletPrefab;
