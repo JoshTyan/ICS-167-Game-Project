@@ -17,7 +17,10 @@ public class Bullet : MonoBehaviour
         Object.Destroy(this.gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //use On trigger to have players walk on top of each other and not push, and for bullets to still hit players
+    //bullets cannot pass through potions on the map, so we call potions obstacles
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // checks if archer is hit and deal damage
         //on collision, checks if gameObject has CharacterScript as a component
