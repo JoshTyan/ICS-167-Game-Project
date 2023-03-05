@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float bulletDmg = 3;
+
     private void Awake() // starts bullet projectile duration
     {
         StartCoroutine(selfDestruct());
@@ -27,31 +29,31 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.TryGetComponent<WindArcher>(out WindArcher archerComponent))
         {
             //if it does, call TakeDamage in character script to deal damage
-            archerComponent.TakeDamage(2);
+            archerComponent.TakeDamage(bulletDmg);
         }
 
         // checks if knight is hit and deal damage
         if(collision.gameObject.TryGetComponent<FireKnight>(out FireKnight knightComponent))
         {
-            knightComponent.TakeDamage(2);
+            knightComponent.TakeDamage(bulletDmg);
         }
 
         // checks if mage is hit and deal damage
         if(collision.gameObject.TryGetComponent<WaterMage>(out WaterMage mageComponent))
         {
-            mageComponent.TakeDamage(2);
+            mageComponent.TakeDamage(bulletDmg);
         }
         
         // checks if priest is hit and deal damage
         if(collision.gameObject.TryGetComponent<HolyPriest>(out HolyPriest priestComponent))
         {
-            priestComponent.TakeDamage(2);
+            priestComponent.TakeDamage(bulletDmg);
         }
         
         // checks if witch is hit and deal damage
         if(collision.gameObject.TryGetComponent<VoidWitch>(out VoidWitch witchComponent))
         {
-            witchComponent.TakeDamage(2);
+            witchComponent.TakeDamage(bulletDmg);
         }
         
         Destroy(gameObject); //destroys bullet on collision
