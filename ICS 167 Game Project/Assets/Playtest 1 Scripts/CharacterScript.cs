@@ -43,6 +43,11 @@ public class CharacterScript : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
+    public void increaseSpeed()
+    {
+        moveSpeed += 1;
+    }
+
     private void FixedUpdate()
     {
         //move character
