@@ -7,8 +7,10 @@ public class NPCPotionAI : MonoBehaviour
     [SerializeField]
     public GameObject[] playerObject; //player objects to flee from
 
+    /* //currently unused
     [SerializeField]
     public GameObject[] potionObject;
+    */
 
     private enum State
     {
@@ -51,13 +53,14 @@ public class NPCPotionAI : MonoBehaviour
             case State.Roaming:
                 //roaming speed set to 1
                 //move object to new position
-                finishedFlee = true; //set to true to drop A SINGLE POTION after fleeing
-                transform.position = Vector2.MoveTowards(this.transform.position, roamPosition, 1 * Time.deltaTime);
+                //finishedFlee = true; //set to true to drop A SINGLE POTION after fleeing
+                transform.position = Vector2.MoveTowards(this.transform.position, roamPosition, 2 * Time.deltaTime);
                 
                 float reachedPositionDistance = 1f;
                 //roam to a new direction when reaching position
                 if(Vector2.Distance(transform.position, roamPosition) < reachedPositionDistance)
                 {
+                    finishedFlee = true; //set to true to drop A SINGLE POTION after fleeing, also must roam to two locations before dropping potion again
                     roamPosition = GetRoamPosition();
                 }
                 FindTarget(); //checks if player gameobject is nearby while roaming
@@ -66,7 +69,7 @@ public class NPCPotionAI : MonoBehaviour
                 //Flee
                 //get player position to flee from and replace roamPosition
                 fleePlayerPosition = GetFleePlayerPosition();
-                transform.position = Vector2.MoveTowards(this.transform.position, fleePlayerPosition, -1 * 3 * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(this.transform.position, fleePlayerPosition, -1 * 5 * Time.deltaTime);
                 StartCoroutine(StopFlee()); //checks if player gameobject is nearby while fleeing
 
                 if(finishedFlee) //if true
