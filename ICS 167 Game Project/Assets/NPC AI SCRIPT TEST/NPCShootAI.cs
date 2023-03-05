@@ -53,16 +53,18 @@ public class NPCShootAI : MonoBehaviour
             case State.Roaming:
                 //roaming speed set to 1
                 //move object to new position
-                finishedShoot = true; //set to true to allow shooting again once in range
-                transform.position = Vector2.MoveTowards(this.transform.position, roamPosition, 1 * Time.deltaTime);
+                //finishedShoot = true; //set to true to allow shooting again once in range
+                transform.position = Vector2.MoveTowards(this.transform.position, roamPosition, 2 * Time.deltaTime);
                 
                 float reachedPositionDistance = 1f;
                 //roam to a new direction when reaching position
                 if(Vector2.Distance(transform.position, roamPosition) < reachedPositionDistance)
                 {
+                    finishedShoot = true; //set to true to allow shooting again once in range, also must roam to two locations before shooting and chasing again
                     roamPosition = GetRoamPosition();
+                    FindTarget(); //checks if player gameobject is nearby while roaming
                 }
-                FindTarget(); //checks if player gameobject is nearby while roaming
+                //FindTarget(); //checks if player gameobject is nearby while roaming
                 break;
             case State.ChaseTarget:
                 //Chase
