@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Playtest 1 Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Playtest 1 Scenes/Multiplayer_Game.unity
+    guid: 11934a4dec0674a31bbcc704df28822f
+  - enabled: 1
+    path: Assets/Playtest 1 Scenes/Player1Win.unity
+    guid: 14e7d2d0903c74911be3f567c0f31f79
+  - enabled: 1
+    path: Assets/Playtest 1 Scenes/Player2Win.unity
+    guid: 34e3654cf4b404b02bb35b9cd72ee0c6
   m_configObjects: {}

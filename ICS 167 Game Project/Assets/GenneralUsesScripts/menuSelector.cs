@@ -11,6 +11,9 @@ public class menuSelector : MonoBehaviour
     public void changeScenes(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void changeScenesMultiPlayer(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
     public void quitGame(){
         Application.Quit();
     }
