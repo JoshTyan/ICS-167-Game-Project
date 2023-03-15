@@ -21,9 +21,6 @@ public class SinglePlayerAI : MonoBehaviour
 
     public float moveSpeedAI = 5f;
 
-    //private Vector2 startingRoamPosition;
-    //private Vector2 randomDir;
-    //private Vector2 roamPosition;
     private Vector2 potionPosition;
     private Vector2 chasePotionPosition;
     private Vector2 chasePosition;
@@ -55,12 +52,6 @@ public class SinglePlayerAI : MonoBehaviour
         state = State.GetPotion; //default set state to GetPotion on awake
     }
 
-    private void Start()
-    {
-        //startingRoamPosition = transform.position;
-        //roamPosition = GetRoamPosition();
-    }
-
     private void Update()
     {
         switch(state)
@@ -76,8 +67,6 @@ public class SinglePlayerAI : MonoBehaviour
                 {
                     transform.position = Vector2.MoveTowards(this.transform.position, chasePotionPosition, moveSpeedAI * Time.deltaTime);
                 }
-                //chasePotionPosition = GetPotionPosition();
-                //transform.position = Vector2.MoveTowards(this.transform.position, chasePotionPosition, moveSpeedAI * Time.deltaTime);
                 
                 if(Vector2.Distance(this.transform.position, chasePotionPosition) == 0f) //upon reaching potion position FindTarget
                 {
@@ -102,29 +91,17 @@ public class SinglePlayerAI : MonoBehaviour
                 break;
             case State.Shooting:
                 ShootingBullet();
-                //StartCoroutine(ShootingBullet());
-                //state = State.Roaming; //also maybe triggering finishedShoot to true again
                 state = State.Idle; // switch back to running immediatly after dropping potion
                 break;
             case State.Idle:
                 StartCoroutine(IdleTimer());
-                //Invoke("IdleTimer", 15.0f);
-                //need to change starting position so object doesnt move back to it's original spot before roaming again
-                //startingRoamPosition = transform.position;
                 grabbedPotion = false;
                 state = State.GetPotion; //move to GetPotion state after idling
                 break;
         }
 
     }
-    /*
-    private Vector2 GetRoamPosition() //random position
-    {
-        //gets random direction to move to
-        randomDir = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)).normalized;
-        return startingRoamPosition + randomDir * Random.Range(5f, 5f);
-    }
-    */
+
     private Vector2 GetPotionPosition()
     {
         grabbedPotion = true;
@@ -132,14 +109,6 @@ public class SinglePlayerAI : MonoBehaviour
         {
             if(potionObject[i] != null)
             {
-                /*
-                if(Vector2.Distance(this.transform.position, potionObject[i].transform.position) > 0f)
-                //if(transform.position != potionObject[i].transform.position)
-                {
-                    potionPosition = potionObject[i].transform.position;
-                    break;
-                }
-                */
                 potionPosition = potionObject[i].transform.position;
                 break;
             }
@@ -170,26 +139,6 @@ public class SinglePlayerAI : MonoBehaviour
         }
         return chasePosition;
     }
-
-    /*
-    private void FindTarget()
-    {
-        //finds first player in list of player objects to chase
-        for(int i = 0; i < playerObject.Length; i++)
-        {
-            //make sure object is not null
-            if(playerObject[i] != null)
-            {
-                //checks if player game objects are in range
-                if(Vector2.Distance(transform.position, playerObject[i].transform.position) < targetRange)
-                {
-                    //change state if player game object is in range
-                    state = State.ChaseTarget;
-                }
-            }
-        }
-    }
-    */
 
     IEnumerator StopChase()
     {
@@ -227,15 +176,12 @@ public class SinglePlayerAI : MonoBehaviour
                 bullet4.GetComponent<Rigidbody2D>().AddForce(firePoint4.up * fireForce, ForceMode2D.Impulse);
             }
         }
-        //else if not true change state to roaming just in case
-        //state = State.Roaming; //maybe triggering it back to true again
     }
 
     IEnumerator IdleTimer()
     //private void IdleTimer()
     {
         yield return new WaitForSeconds(3); //thinks it is waiting 3 seconds from StopChase()
-        //state = State.Roaming; //move to roaming state after idling
     }
 
     public void increaseSpeed() //increase move speed of AI
