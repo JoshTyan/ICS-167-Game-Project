@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Joshua Tyan, Kevin Rogan
+
 public class AIChase : MonoBehaviour
 {
     public GameObject player;
