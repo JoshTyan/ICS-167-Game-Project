@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Joshua Tyan, Kevin Rogan
+
 public class SinglePlayerAI : MonoBehaviour
 {
     [SerializeField]
@@ -80,8 +82,10 @@ public class SinglePlayerAI : MonoBehaviour
                 //Chase
                 //get player position to chase to and replace roamPosition
                 chasePlayerPosition = GetChasePlayerPosition();
-
-                transform.position = Vector2.MoveTowards(this.transform.position, chasePlayerPosition, moveSpeedAI * Time.deltaTime);
+                if(Vector2.Distance(this.transform.position, chasePlayerPosition)>5){
+                    transform.position = Vector2.MoveTowards(this.transform.position, chasePlayerPosition, moveSpeedAI * Time.deltaTime);
+                }
+                
                 //aiming elements
                 Vector2 aimDirection = chasePlayerPosition - rb.position;
                 float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
@@ -153,6 +157,7 @@ public class SinglePlayerAI : MonoBehaviour
         //shoots bullets
         if(finishedShoot) //finishedShoot is bool so if true spawn poition
         {
+            //here
             finishedShoot = false; //switch finishedShoot to false to prevent more potion spawning until it does roaming and fleeing state again
             //4 bullets moment :despair:
             if(firePoint1 != null)
